@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS task</title>
+    <style>
+        body {
+            background-color: hotpink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* full height of screen */
+            margin: 0;
+            text-align: center;
+        }
+        details {
+            margin-top: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        summary {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+        summary:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin: 5px 0 0 0;
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
-    <h1> Check Console for Output</h1>
+    <h1>Click here</h1>
+
+    <details>
+        <summary>How to Open Console?</summary>
+        <p>1️⃣ Right-click anywhere on the page.</p>
+        <p>2️⃣ Select <b>Inspect</b> or <b>Inspect Element</b>.</p>
+        <p>3️⃣ Go to the <b>Console</b> tab.</p>
+        <p>4️⃣ You will see the output there.</p>
+    </details>
+
     <script src="loops.js"></script>
     <script src="if-else.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>
