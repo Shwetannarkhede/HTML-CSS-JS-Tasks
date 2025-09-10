@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+    <link rel="stylesheet" href="DomCurdTask.css">
+  
+</head>
+<body>
+    
+  <h1>DOM CRUD OPERATION</h1>
+
+  <ol id="data">
+    <li>Add Data</li>
+  </ol>
+
+  <p id="myelement">Update data</p>
+
+  <div class="btn-container">
+    <button onclick="AddItem()">Add Item</button>
+    <button onclick="RemoveElement()">Remove Element</button>
+    <button onclick="RemoveAll()">Remove All</button>
+    <button onclick="updateElement()">Update</button>
+  </div>
+
+  <script>
+    // Add data 
+    function AddItem() {
+      let newItem = document.createElement('li');
+      newItem.innerHTML = "Add Data";
+      let Items = document.getElementById('data');
+      Items.appendChild(newItem);
+    }
+
+    // Remove first data
+    function RemoveElement() {
+      let list = document.getElementById("data");
+      if (list.firstElementChild) {
+        list.removeChild(list.firstElementChild);
+      }
+    }
+
+    // Remove All data
+    function RemoveAll() {
+      let list = document.getElementById("data");
+      list.innerHTML = "";
+    }
+
+    // Update data
+    function updateElement() {
+      document.getElementById('myelement').innerHTML = "Updated Data!";
+    }
+  </script>
+</body>
+</html>
